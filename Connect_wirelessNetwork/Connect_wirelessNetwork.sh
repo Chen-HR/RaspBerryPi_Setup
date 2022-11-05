@@ -1,3 +1,8 @@
+if [ $1 = "--help" ] ; then
+  printf "$ $0 {ssid} {psk} [{key_mgmt} [{country} [{GROUP} [{ctrl_interface}]]]]"
+  exit 0;
+fi
+
 echo $0: Set the connection information of the wireless network...
 
 if [ $1 ] ; then
