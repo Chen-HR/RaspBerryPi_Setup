@@ -1,4 +1,4 @@
-# RaspberryPi_Setup
+# RaspberryPi
 ## Linux
 - Apt-UpdateUpgrade
 - InputMethod-Chinese
