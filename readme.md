@@ -2,7 +2,7 @@
 ## Linux
 - Apt-UpdateUpgrade
 - InputMethod-Chinese
-## Linux-RaspBerryPi
+## Linux-RaspberryPi
 - System
 - Connect-WirelessNetwork
 - DisablingWarning-LowVoltage
