@@ -1,15 +1,15 @@
 # Set Chinese input method
-## bash
+## Install fbterm and fcitx
 ```bash
 sudo apt install fbterm fbterm-ucimf ucimf-chewing [ucimf-sunpinyin]
 sudo apt install fcitx fcitx-chewing fcitx-frontend-fbterm 
 ```
-## ~/.fbtermrc
+## Modify file `~/.fbtermrc`
 - Modify:
   - `input-method`: 
     - original: 
     - target: `fcitx-fbterm`
-## ~/.config/fcitx/profile
+## Modify file `~/.config/fcitx/profile`
 - Modify:
   - `EnabledIMList`
     - {InputMode}: 
@@ -21,7 +21,7 @@ sudo apt install fcitx fcitx-chewing fcitx-frontend-fbterm
     - `chewing`: 
       - original: `False`
       - target: `True`
-## ~/.profile
+## Modify file `~/.profile`
 Append:
 ```bash
 date +"%Y/%m/%d %H:%M:%S:%N $TERM $LANG" >> ~/fcitx-fbterm-helper.log ;
@@ -33,10 +33,13 @@ if [ "$TERM" = "linux" -a "$LANG" = "zh_TW.UTF-8" ]; then
 fi
 ```
 - Illustrate: 
+  - This program is executed when a new TTY is opened
+  - Execution condition:
+    - Execute on tty and The language is set to `zh_TW.UTF-8`
   - Launch: 
     - FBTerm
     - Fcitx
   - Log:
     - TTY startTime & term
-    - environment variable
+    - (ignoring) environment variable
     - Launcher execution information
