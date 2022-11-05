@@ -11,7 +11,7 @@ sudo setcap 'cap_sys_tty_config+ep' /usr/bin/fbterm
   - original: 
   - target: `fcitx-fbterm`
 ## Modify in file `~/.config/fcitx/profile`
-- `EnabledIMList`
+- `EnabledIMList`:
   - Select input methods to enable
   - {InputMode}: 
     - original: `True`
