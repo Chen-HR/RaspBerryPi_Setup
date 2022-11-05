@@ -3,7 +3,13 @@
 ```bash
 sudo apt install fbterm fbterm-ucimf ucimf-chewing [ucimf-sunpinyin]
 sudo apt install fcitx fcitx-chewing fcitx-frontend-fbterm fcitx-frontend-all
-sudo adduser $USER video # or `sudo gpasswd -a $USER video`
+```
+## 
+```bash
+sudo adduser $USER video # or "sudo gpasswd -a $USER video"
+```
+## 
+```bash
 sudo setcap 'cap_sys_tty_config+ep' /usr/bin/fbterm
 ```
 ## Modify in file `~/.fbtermrc`
