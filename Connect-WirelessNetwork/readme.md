@@ -3,7 +3,7 @@ Set the connection information of the wireless network
 
 ## usage
 ```
-cntwlan.sh {ssid} {psk} [{key_mgmt} [{country} [{GROUP} [{ctrl_interface}]]]]
+cntwlan.sh connect {ssid} {psk} [{key_mgmt} [{country} [{GROUP} [{ctrl_interface}]]]]
 ```
 ## parameter
 - ssid
